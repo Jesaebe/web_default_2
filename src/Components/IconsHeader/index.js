@@ -1,18 +1,18 @@
-import './style.css';
 import perfil from '../../images/perfil.svg';
 import bag from '../../images/sacola.svg';
+import { LiContainer, UlContainer } from '../StyleComponent';
 
 const icons = [perfil, bag];
 
 function IconsHeader() {
   return (
-    <ui className='icons'>          
+    <UlContainer>
       {icons.map((icon) => (
-        <li className='icon'>
+        <LiContainer>
           <img src={icon} alt=''/>
-        </li>          
+        </LiContainer>          
       ))}
-    </ui>
+    </UlContainer>
   )
 }
 
