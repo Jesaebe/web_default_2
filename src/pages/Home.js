@@ -1,15 +1,15 @@
-import Header from './Components/Header/index.js';
-import LastReleases from './Components/LastReleases/index.js';
-import RecomendCard from './Components/recomendCard/index.js';
-import Research from './Components/Research/index.js';
 
-import bookImage from './images/livro1.png';
+import LastReleases from '../Components/LastReleases/index.js';
+import RecomendCard from '../Components/recomendCard/index.js';
+import Research from '../Components/Research/index.js';
+
+import bookImage from '../images/livro1.png';
 
 import styled from 'styled-components';
 
 const AppContainer = styled.div `
-  background-image: linear-gradient(0deg, #000 10%, #723EBE);
-  padding: 50px ;
+  
+ 
 `
 const RecomendCard1 = {
   title: 'Talvez você se interesse por...',
@@ -17,10 +17,9 @@ const RecomendCard1 = {
   description: 'Construindo uma aplicação com a plataforma Google.',
   imgBook: bookImage
 }
-function App() {
+function Home() {
   return (
-    <AppContainer>
-      <Header/>
+    <AppContainer>      
       <Research/>
       <LastReleases/>
       <RecomendCard 
@@ -34,4 +33,4 @@ function App() {
   
 }
 
-export default App;
+export default Home;

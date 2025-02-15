@@ -51,3 +51,13 @@ export const Card = styled.div `
 	gap: 10px;
 	box-shadow: 0px 4px 4px #723EBE;
 `
+
+export const Button = styled.button`
+	background-color: #723EBE;
+	color: #FFF;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 1px 1px 4px #AAA;
+	padding: 3px 0;
+
+`

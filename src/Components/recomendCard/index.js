@@ -1,4 +1,10 @@
-import { Card, SubTitle, Title } from "../StyleComponent";
+import styled from "styled-components";
+import { Button, Card, SubTitle, Title } from "../StyleComponent";
+
+const ContainerImg = styled.div`
+	display: flex;
+	flex-direction: column;
+`
 
 function RecomendCard({title, subtitle, description, img}) {
 	return (
@@ -8,10 +14,10 @@ function RecomendCard({title, subtitle, description, img}) {
 				<SubTitle cor='#723EBE'>{subtitle}</SubTitle>
 				<p>{description}</p>
 			</div>
-			<div >
+			<ContainerImg >
 				<img src={img} />
-				<button>Saiba mais</button>
-			</div>
+				<Button>Saiba mais</Button>
+			</ContainerImg>
 		</Card>
 	)
 }

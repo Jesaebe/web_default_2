@@ -4,7 +4,8 @@ import Input from "../Input";
 import { BookContainer, BookImage, ResearchContainer, SubTitle, Title } from "../StyleComponent";
 
 function Research() {
-	const [booksResearched, setBooksResearched] = useState(['']);
+	const [booksResearched, setBooksResearched] = useState([]);
+	
 	return (
 		<ResearchContainer>
 			<Title>Já sabe por onde começar?</Title>
